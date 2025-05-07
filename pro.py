@@ -198,3 +198,26 @@ plt.show()
 
 #=============================
 
+# Correlation analysis
+correlation_matrix = df[['prepration_time_minutes', 'cooking_time_minutes', 'total_time_minutes', 'ratings_of_dish']].corr()
+
+# Heatmap visualization
+plt.figure(figsize=(8, 6))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f")
+plt.title("Correlation Matrix")
+plt.show()
+
+## Effort Score
+
+# Effort Score = preparation time + cooking time
+df['effort_score'] = df['prepration_time_minutes'] + df['cooking_time_minutes']
+
+# Scatter plot to analyze Effort Score vs Ratings
+plt.figure(figsize=(10, 6))
+sns.scatterplot(data=df, x='effort_score', y='ratings_of_dish', hue='cuisine_name', alpha=0.7)
+plt.title("Effort Score vs Ratings")
+plt.xlabel("Effort Score")
+plt.ylabel("Ratings")
+plt.legend(bbox_to_anchor=(1.05, 1), title="Cuisine")
+plt.tight_layout()
+plt.show()
