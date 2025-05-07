@@ -221,3 +221,6 @@ plt.ylabel("Ratings")
 plt.legend(bbox_to_anchor=(1.05, 1), title="Cuisine")
 plt.tight_layout()
 plt.show()
+
+df.to_excel('enhanced_indian_cuisine_dataset.xlsx', index=False)
+print("Enhanced dataset has been saved as 'enhanced_indian_cuisine_dataset.xlsx'.")
