@@ -169,3 +169,32 @@ plt.show()
 print(df.columns)
 
 
+#-----------------------------------------
+
+# Detecting outliers using the IQR method
+def detect_outliers(series):
+    Q1 = series.quantile(0.25)
+    Q3 = series.quantile(0.75)
+    IQR = Q3 - Q1
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+    return series[(series < lower_bound) | (series > upper_bound)]
+
+# Detect outliers in time columns
+outliers_prep = detect_outliers(df['prepration_time_minutes'])
+outliers_cook = detect_outliers(df['cooking_time_minutes'])
+
+print("\nOutliers in Preparation Time:")
+print(outliers_prep)
+
+print("\nOutliers in Cooking Time:")
+print(outliers_cook)
+
+# Visualize outliers
+plt.figure(figsize=(10, 6))
+sns.boxplot(data=df[['prepration_time_minutes', 'cooking_time_minutes']])
+plt.title("Box Plot of Preparation and Cooking Times")
+plt.show()
+
+#=============================
+
