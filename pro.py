@@ -241,3 +241,16 @@ cuisine_summary = df.groupby('cuisine_name').agg({
 
 print("\nCuisine-wise Summary:")
 print(cuisine_summary.head(10))
+
+#-> Bar Plot: Top Cuisines by Average Rating
+
+top_cuisines_by_rating = cuisine_summary.sort_values('avg_rating', ascending=False).head(10)
+
+plt.figure(figsize=(10, 6))
+sns.barplot(data=top_cuisines_by_rating, x=top_cuisines_by_rating.index, y='avg_rating', palette='mako')
+plt.xticks(rotation=45, ha='right')
+plt.title("Top 10 Cuisines by Average Dish Rating")
+plt.ylabel("Average Rating")
+plt.xlabel("Cuisine")
+plt.tight_layout()
+plt.show()
