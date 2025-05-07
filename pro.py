@@ -224,3 +224,20 @@ plt.show()
 
 df.to_excel('enhanced_indian_cuisine_dataset.xlsx', index=False)
 print("Enhanced dataset has been saved as 'enhanced_indian_cuisine_dataset.xlsx'.")
+
+# Average Ratings and Effort by Cuisine
+# Group by cuisine and calculate averages
+cuisine_summary = df.groupby('cuisine_name').agg({
+    'ratings_of_dish': 'mean',
+    'effort_score': 'mean',
+    'total_time_minutes': 'mean',
+    'name_of_dish': 'count'
+}).rename(columns={
+    'ratings_of_dish': 'avg_rating',
+    'effort_score': 'avg_effort',
+    'total_time_minutes': 'avg_total_time',
+    'name_of_dish': 'dish_count'
+}).sort_values(by='avg_rating', ascending=False)
+
+print("\nCuisine-wise Summary:")
+print(cuisine_summary.head(10))
