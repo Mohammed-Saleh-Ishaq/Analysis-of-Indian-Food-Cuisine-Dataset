@@ -330,3 +330,12 @@ easiest_cuisines = cuisine_summary.sort_values('avg_effort').head(10)
 sns.barplot(x=easiest_cuisines['avg_effort'], y=easiest_cuisines.index, ax=axes[0, 1], palette='Greens')
 axes[0, 1].set_title('Top 10 Easiest Cuisines')
 axes[0, 1].set_xlabel('Average Effort Score')
+
+# 3. Scatter: Effort vs Rating by Cuisine
+sns.scatterplot(data=cuisine_summary, x='avg_effort', y='avg_rating', size='dish_count',
+                ax=axes[1, 0], hue=cuisine_summary.index, palette='tab20', legend=False)
+axes[1, 0].axhline(4.2, color='green', linestyle='--')
+axes[1, 0].axvline(5, color='red', linestyle='--')
+axes[1, 0].set_title('Effort vs Rating (by Cuisine)')
+axes[1, 0].set_xlabel('Average Effort')
+axes[1, 0].set_ylabel('Average Rating')
