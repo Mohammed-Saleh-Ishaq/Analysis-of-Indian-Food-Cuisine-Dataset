@@ -276,3 +276,17 @@ course_summary = df.groupby('course_name').agg({
 
 print("\nCourse-wise Summary:")
 print(course_summary.head())
+
+#1. Which cuisines offer high ratings with low effort?
+# Define high rating and low effort thresholds
+high_rating_threshold = 4.2
+low_effort_threshold = 5  
+
+# Filter cuisines that meet both criteria
+efficient_cuisines = cuisine_summary[
+    (cuisine_summary['avg_rating'] >= high_rating_threshold) &
+    (cuisine_summary['avg_effort'] <= low_effort_threshold)
+].sort_values(by='avg_rating', ascending=False)
+
+print("\nCuisines with High Ratings and Low Effort:")
+print(efficient_cuisines)
