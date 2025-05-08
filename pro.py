@@ -339,3 +339,12 @@ axes[1, 0].axvline(5, color='red', linestyle='--')
 axes[1, 0].set_title('Effort vs Rating (by Cuisine)')
 axes[1, 0].set_xlabel('Average Effort')
 axes[1, 0].set_ylabel('Average Rating')
+
+# 4. Top Courses by Average Rating
+top_courses = course_summary.sort_values('avg_rating', ascending=False).head(5)
+sns.barplot(x=top_courses['avg_rating'], y=top_courses.index, ax=axes[1, 1], palette='Blues_r')
+axes[1, 1].set_title('Top Course Types by Rating')
+axes[1, 1].set_xlabel('Average Rating')
+
+plt.tight_layout(rect=[0, 0.03, 1, 0.95])
+plt.show()
