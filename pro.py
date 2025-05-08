@@ -348,3 +348,9 @@ axes[1, 1].set_xlabel('Average Rating')
 
 plt.tight_layout(rect=[0, 0.03, 1, 0.95])
 plt.show()
+
+# Top 5 cuisines that are both highly rated and require low effort
+recommendations = cuisine_summary[
+    (cuisine_summary['avg_rating'] >= 4.2) & 
+    (cuisine_summary['avg_effort'] <= 5)
+].sort_values('avg_rating', ascending=False)
