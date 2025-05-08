@@ -315,3 +315,18 @@ plt.ylabel("Average Rating")
 plt.legend()
 plt.tight_layout()
 plt.show()
+
+fig, axes = plt.subplots(2, 2, figsize=(15, 12))
+fig.suptitle("Dashboard Summary of Indian Food Dataset", fontsize=18)
+
+# 1. Top 10 Cuisines by Average Rating
+top_rated_cuisines = cuisine_summary.sort_values('avg_rating', ascending=False).head(10)
+sns.barplot(x=top_rated_cuisines['avg_rating'], y=top_rated_cuisines.index, ax=axes[0, 0], palette='coolwarm')
+axes[0, 0].set_title('Top 10 Cuisines by Avg Rating')
+axes[0, 0].set_xlabel('Average Rating')
+
+# 2. Top 10 Easiest Cuisines (Lowest Avg Effort)
+easiest_cuisines = cuisine_summary.sort_values('avg_effort').head(10)
+sns.barplot(x=easiest_cuisines['avg_effort'], y=easiest_cuisines.index, ax=axes[0, 1], palette='Greens')
+axes[0, 1].set_title('Top 10 Easiest Cuisines')
+axes[0, 1].set_xlabel('Average Effort Score')
