@@ -290,3 +290,28 @@ efficient_cuisines = cuisine_summary[
 
 print("\nCuisines with High Ratings and Low Effort:")
 print(efficient_cuisines)
+
+#2. Top courses by rating or effort
+
+# Top 5 easy courses (lowest effort)
+top_easy_courses = course_summary.sort_values('avg_effort').head(5)
+print("\nTop 5 Course Types by Ease (Lowest Avg Effort):")
+print(top_easy_courses)
+
+# Top 5 courses by rating
+top_rated_courses = course_summary.sort_values('avg_rating', ascending=False).head(5)
+print("\nTop 5 Course Types by Rating:")
+print(top_rated_courses)
+
+#3. Visual: Effort vs Rating Scatter Plot by Cuisine
+
+plt.figure(figsize=(10, 6))
+sns.scatterplot(data=cuisine_summary, x='avg_effort', y='avg_rating', size='dish_count', hue=cuisine_summary.index, legend=False, palette='tab10')
+plt.axhline(high_rating_threshold, color='green', linestyle='--', label='High Rating Threshold')
+plt.axvline(low_effort_threshold, color='red', linestyle='--', label='Low Effort Threshold')
+plt.title("Cuisine: Avg Effort vs Avg Rating")
+plt.xlabel("Average Effort Score")
+plt.ylabel("Average Rating")
+plt.legend()
+plt.tight_layout()
+plt.show()
