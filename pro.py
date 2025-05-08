@@ -254,3 +254,25 @@ plt.ylabel("Average Rating")
 plt.xlabel("Cuisine")
 plt.tight_layout()
 plt.show()
+
+#----Heatmap: Cuisine vs Average Metrics
+plt.figure(figsize=(10, 6))
+sns.heatmap(cuisine_summary[['avg_rating', 'avg_effort', 'avg_total_time']], annot=True, cmap="YlGnBu", fmt=".1f")
+plt.title("Cuisine-wise Averages: Rating, Effort, Total Time")
+plt.tight_layout()
+plt.show()
+
+course_summary = df.groupby('course_name').agg({
+    'ratings_of_dish': 'mean',
+    'effort_score': 'mean',
+    'total_time_minutes': 'mean',
+    'name_of_dish': 'count'
+}).rename(columns={
+    'ratings_of_dish': 'avg_rating',
+    'effort_score': 'avg_effort',
+    'total_time_minutes': 'avg_total_time',
+    'name_of_dish': 'dish_count'
+}).sort_values(by='avg_rating', ascending=False)
+
+print("\nCourse-wise Summary:")
+print(course_summary.head())
