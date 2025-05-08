@@ -354,3 +354,7 @@ recommendations = cuisine_summary[
     (cuisine_summary['avg_rating'] >= 4.2) & 
     (cuisine_summary['avg_effort'] <= 5)
 ].sort_values('avg_rating', ascending=False)
+
+
+print("🌟 Recommended Cuisines (High Rating, Low Effort):")
+print(recommendations[['avg_rating', 'avg_effort']])
