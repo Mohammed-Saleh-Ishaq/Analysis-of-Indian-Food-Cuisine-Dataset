@@ -54,7 +54,7 @@ insights into dish characteristics, cuisine patterns, ratings, and cooking effor
 
    cd Analysis-of-Indian-Food-Cuisine-Dataset
 
-2. Install required packages:
+2. Install required packages :
 
 ```bash
    pip install pandas matplotlib seaborn missingno openpyxl
