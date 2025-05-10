@@ -57,4 +57,10 @@ insights into dish characteristics, cuisine patterns, ratings, and cooking effor
 2. Install required packages:
 
 ```bash
-pip install pandas matplotlib seaborn missingno openpyxl
+   pip install pandas matplotlib seaborn missingno openpyxl
+
+3. Add the dataset:
+
+   - Place Indain_Food_Cuisine_Dataset.xlsx in the root folder of the project.
+
+
