@@ -28,3 +28,18 @@ insights into dish characteristics, cuisine patterns, ratings, and cooking effor
 - Recommendations: Best cuisines based on high rating + low effort
 
 ---
+
+## 📁 Dataset
+
+- Format: Excel `.xlsx`
+- Filename: `Indain_Food_Cuisine_Dataset.xlsx`
+- Columns include:
+  - Name of dish
+  - Ingredients
+  - Course name
+  - Cuisine type
+  - Ratings
+  - Diet type
+  - Preparation/Cooking/Total time
+
+---
