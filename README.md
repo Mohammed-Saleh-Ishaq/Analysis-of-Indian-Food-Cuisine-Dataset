@@ -48,5 +48,6 @@ insights into dish characteristics, cuisine patterns, ratings, and cooking effor
 
 1. **Clone this repository**:
    ```bash
-   git clone https://github.com/yourusername/indian-cuisine-analysis.git
-   cd indian-cuisine-analysis
+   git clone https://github.com/Mohammed-Saleh-Ishaq/Analysis-of-Indian-Food-Cuisine-Dataset.git
+
+   cd Analysis-of-Indian-Food-Cuisine-Dataset
