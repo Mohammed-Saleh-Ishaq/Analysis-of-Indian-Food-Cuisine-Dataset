@@ -49,6 +49,7 @@ insights into dish characteristics, cuisine patterns, ratings, and cooking effor
 1. **Clone this repository**:
    ```bash
    git clone https://github.com/Mohammed-Saleh-Ishaq/Analysis-of-Indian-Food-Cuisine-Dataset.git
+   ```
 
    Once cloned, navigate into the directory using:
 
@@ -58,9 +59,14 @@ insights into dish characteristics, cuisine patterns, ratings, and cooking effor
 
 ```bash
    pip install pandas matplotlib seaborn missingno openpyxl
-
+   ```
 3. Add the dataset:
 
    - Place Indain_Food_Cuisine_Dataset.xlsx in the root folder of the project.
 
+---
 
+
+## 🚀 Run the Analysis
+
+Execute the Python script:
