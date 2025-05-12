@@ -71,3 +71,9 @@ insights into dish characteristics, cuisine patterns, ratings, and cooking effor
 ## 🚀 Run the Analysis
 
 Execute the Python script:
+
+```bash
+
+python indian_cuisine_analysis.py
+
+```
