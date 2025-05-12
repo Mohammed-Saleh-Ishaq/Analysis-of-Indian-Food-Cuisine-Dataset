@@ -77,3 +77,8 @@ Execute the Python script:
 python indian_cuisine_analysis.py
 
 ```
+
+The script will:
+   1. Print insights to the console
+
+   
