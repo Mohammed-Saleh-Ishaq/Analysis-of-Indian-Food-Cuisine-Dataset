@@ -81,5 +81,6 @@ python indian_cuisine_analysis.py
 The script will:
    1. Print insights to the console
    2. Save filtered data as Excel files
+   3. Show multiple interactive plots
 
    
