@@ -50,12 +50,13 @@ insights into dish characteristics, cuisine patterns, ratings, and cooking effor
    ```bash
    git clone https://github.com/Mohammed-Saleh-Ishaq/Analysis-of-Indian-Food-Cuisine-Dataset.git
    ```
-
    Once cloned, navigate into the directory using:
+   ```bash
 
    cd Analysis-of-Indian-Food-Cuisine-Dataset
+   ```
 
-2. Install required packages :
+3. Install required packages :
 
 ```bash
    pip install pandas matplotlib seaborn missingno openpyxl
