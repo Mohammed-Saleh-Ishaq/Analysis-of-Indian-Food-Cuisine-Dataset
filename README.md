@@ -84,4 +84,5 @@ The script will:
    3. Show multiple interactive plots
 
    
-📈 Sample Visuals
+
+## 📈 Sample Visuals
