@@ -86,3 +86,5 @@ The script will:
    
 
 ## 📈 Sample Visuals
+
+  1. Pie chart of diet types
