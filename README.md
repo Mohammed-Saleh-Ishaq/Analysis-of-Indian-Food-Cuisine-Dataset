@@ -88,3 +88,4 @@ The script will:
 ## 📈 Sample Visuals
 
   1. Pie chart of diet types
+     ![Pie_chart _Figure_3](https://github.com/user-attachments/assets/84ecceea-42c4-41e8-bbaf-931223491fe1)
