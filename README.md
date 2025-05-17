@@ -84,7 +84,7 @@ The script will:
    3. Show multiple interactive plots
 
    
-
+---
 ## 📈 Sample Visuals
 
   1. Pie chart of diet types
