@@ -92,3 +92,5 @@ The script will:
 ---
   2. Bar plots of top cuisines
      ![Bar Chart _Figure_2](https://github.com/user-attachments/assets/f9aa2a87-88b4-4176-ab82-d236859e3cd5)
+
+---
