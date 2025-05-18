@@ -95,4 +95,4 @@ The script will:
 ---
 
   3. Dashboard summary (4-in-1 chart)
-![Bar plot_Figure_11](https://github.com/user-attachments/assets/4297ac82-0279-4595-88bc-e8aaf6ce1a36)
+     ![Bar plot_Figure_11](https://github.com/user-attachments/assets/4297ac82-0279-4595-88bc-e8aaf6ce1a36)
