@@ -102,4 +102,4 @@ The script will:
 
 ## 🧠 Insights & Recommendations
 
-    1. Cuisines with high average ratings and low average effort
+    1. Cuisines with high average ratings and low average effort.
