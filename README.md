@@ -103,4 +103,4 @@ The script will:
 ## 🧠 Insights & Recommendations
 
     1. Cuisines with high average ratings and low average effort.
-    2.
+    2. Best course types for ease or quality
