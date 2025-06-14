@@ -106,4 +106,6 @@ The script will:
     2. Best course types for ease or quality.
     3. Outliers in time-based metrics.
     4. Heatmap of correlation between time and ratings.
+
+📤 Output Files
     
