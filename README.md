@@ -110,4 +110,4 @@ The script will:
 ---
 
 ## 📤 Output Files
-    
+    vegetarian_dishes.xlsx
