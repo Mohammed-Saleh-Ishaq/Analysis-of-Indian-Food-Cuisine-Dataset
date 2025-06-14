@@ -107,5 +107,7 @@ The script will:
     3. Outliers in time-based metrics.
     4. Heatmap of correlation between time and ratings.
 
+---
+
 ## 📤 Output Files
     
