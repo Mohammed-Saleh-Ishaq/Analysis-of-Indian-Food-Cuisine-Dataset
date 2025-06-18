@@ -114,4 +114,6 @@ The script will:
     2. top_rated_dishes.xlsx.
     3. Indain_Food_Cuisine_Dataset.xlsx.
 
+---
+
 ✅ Requirements
