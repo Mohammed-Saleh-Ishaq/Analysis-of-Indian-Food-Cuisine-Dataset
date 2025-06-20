@@ -118,4 +118,4 @@ The script will:
 
 ## ✅ Requirements
     
-    --> pytjon
+    --> python , 
