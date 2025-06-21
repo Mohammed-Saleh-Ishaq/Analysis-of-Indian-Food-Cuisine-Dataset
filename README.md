@@ -118,4 +118,4 @@ The script will:
 
 ## ✅ Requirements
     
-    --> python , 
+    --> python , pan
