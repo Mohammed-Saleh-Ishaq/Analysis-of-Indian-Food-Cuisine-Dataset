@@ -118,4 +118,4 @@ The script will:
 
 ## ✅ Requirements
     
-    --> python , panda , seaborn , Matplotlib ,
+    --> python , panda , seaborn , Matplotlib , Vs
