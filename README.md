@@ -118,7 +118,7 @@ The script will:
 
 ## ✅ Requirements
     
-    --> python , 
+    --> python
     panda , seaborn , Matplotlib , missingno , openpyxl , Vscode.
 
 ---
