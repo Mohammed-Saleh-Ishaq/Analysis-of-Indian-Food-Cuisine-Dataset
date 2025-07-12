@@ -103,7 +103,7 @@ The script will:
 ## 🧠 Insights & Recommendations
 
    --> 1. Cuisines with high average ratings and low average effort.
-   -- 2. Best course types for ease or quality.
+   --> 2. Best course types for ease or quality.
     3. Outliers in time-based metrics.
     4. Heatmap of correlation between time and ratings.
 
